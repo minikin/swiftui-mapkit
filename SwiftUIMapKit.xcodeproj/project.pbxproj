@@ -63,6 +63,7 @@
 			children = (
 				2BD2F2502306A6540030A671 /* SwiftUIMapKit */,
 				2BD2F2672306A6580030A671 /* SwiftUIMapKitTests */,
+				2BD2F2732306AC3A0030A671 /* Services */,
 				2BD2F24F2306A6540030A671 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,13 +80,8 @@
 		2BD2F2502306A6540030A671 /* SwiftUIMapKit */ = {
 			isa = PBXGroup;
 			children = (
-				2BD2F2512306A6540030A671 /* AppDelegate.swift */,
-				2BD2F2532306A6540030A671 /* SceneDelegate.swift */,
-				2BD2F2552306A6540030A671 /* ContentView.swift */,
-				2BD2F2572306A6580030A671 /* Assets.xcassets */,
-				2BD2F25C2306A6580030A671 /* LaunchScreen.storyboard */,
-				2BD2F25F2306A6580030A671 /* Info.plist */,
-				2BD2F2592306A6580030A671 /* Preview Content */,
+				2BD2F2752306AC770030A671 /* App */,
+				2BD2F2782306AD0F0030A671 /* Verticals */,
 			);
 			path = SwiftUIMapKit;
 			sourceTree = "<group>";
@@ -105,6 +101,98 @@
 				2BD2F26A2306A6580030A671 /* Info.plist */,
 			);
 			path = SwiftUIMapKitTests;
+			sourceTree = "<group>";
+		};
+		2BD2F2732306AC3A0030A671 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2F27F2306AD9A0030A671 /* Models */,
+				2BD2F2742306AC450030A671 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2BD2F2742306AC450030A671 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2BD2F2752306AC770030A671 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2F2512306A6540030A671 /* AppDelegate.swift */,
+				2BD2F2532306A6540030A671 /* SceneDelegate.swift */,
+				2BD2F2552306A6540030A671 /* ContentView.swift */,
+				2BD2F2572306A6580030A671 /* Assets.xcassets */,
+				2BD2F25C2306A6580030A671 /* LaunchScreen.storyboard */,
+				2BD2F25F2306A6580030A671 /* Info.plist */,
+				2BD2F2592306A6580030A671 /* Preview Content */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2BD2F2782306AD0F0030A671 /* Verticals */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2F2792306AD1C0030A671 /* All */,
+			);
+			path = Verticals;
+			sourceTree = "<group>";
+		};
+		2BD2F2792306AD1C0030A671 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2F27D2306AD5F0030A671 /* Actions */,
+				2BD2F27C2306AD510030A671 /* Reducers */,
+				2BD2F27E2306AD650030A671 /* Utils */,
+				2BD2F27B2306AD4A0030A671 /* ViewModels */,
+				2BD2F27A2306AD410030A671 /* VIews */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		2BD2F27A2306AD410030A671 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		2BD2F27B2306AD4A0030A671 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2BD2F27C2306AD510030A671 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		2BD2F27D2306AD5F0030A671 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		2BD2F27E2306AD650030A671 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2BD2F27F2306AD9A0030A671 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,10 +451,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "SwiftUIMapKit/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "SwiftUIMapKit/App/Preview\\ Content";
 				DEVELOPMENT_TEAM = GW82A8W73Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIMapKit/Info.plist;
+				INFOPLIST_FILE = SwiftUIMapKit/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.SwiftUIMapKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,10 +471,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "SwiftUIMapKit/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "SwiftUIMapKit/App/Preview\\ Content";
 				DEVELOPMENT_TEAM = GW82A8W73Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIMapKit/Info.plist;
+				INFOPLIST_FILE = SwiftUIMapKit/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.SwiftUIMapKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
