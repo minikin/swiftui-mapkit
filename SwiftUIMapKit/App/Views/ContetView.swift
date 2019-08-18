@@ -1,14 +1,14 @@
 //
-//  ContenView.swift
+//  ContetView.swift
 //  SwiftUIMapKit
 //
-//  Created by Sasha Prokhorenko on 18.08.19.
+//  Created by Sasha Prokhorenko on 19.08.19.
 //  Copyright © 2019 Sasha Prokhorenko. All rights reserved.
 //
 
 import SwiftUI
 
-struct ContenView: View {
+struct ContentView: View {
     @ObservedObject var store = sharedStore
     var body: some View {
         Group {
@@ -22,3 +22,11 @@ struct ContenView: View {
         }
     }
 }
+
+#if DEBUG
+struct ContetView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+#endif

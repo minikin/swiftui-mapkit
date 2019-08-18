@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "000011",
+    "description": "Electric Scooter",
+    "latitude": 52.529077,
+    "longitude": 13.416351,
+    "batteryLevel": 98,
+    "timestamp": "2019-03-10T09:31:56Z",
+    "price": 15,
+    "priceTime": 60,
+    "currency": "€"
+  },
+  {
+    "id": 2,
+    "name": "001100",
+    "description": "Electric Scooter",
+    "latitude": 52.529103,
+    "longitude": 13.416255,
+    "batteryLevel": 11,
+    "timestamp": "2019-03-10T11:15:22Z",
+    "price": 20,
+    "priceTime": 60,
+    "currency": "€"
+  },
+  {
+    "id": 3,
+    "name": "001111",
+    "description": "Electric Scooter",
+    "latitude": 52.531478,
+    "longitude": 13.415641,
+    "batteryLevel": 69,
+    "timestamp": "2019-03-10T19:55:56Z",
+    "price": 15,
+    "priceTime": 60,
+    "currency": "€"
+  },
+  {
+    "id": 4,
+    "name": "110000",
+    "description": "Electric Scooter",
+    "latitude": 52.536722,
+    "longitude": 13.402195,
+    "batteryLevel": 3,
+    "timestamp": "2019-03-11T09:31:56Z",
+    "price": 15,
+    "priceTime": 60,
+    "currency": "€"
+  },
+  {
+    "id": 5,
+    "name": "110011",
+    "description": "Electric Scooter",
+    "latitude": 52.523395,
+    "longitude": 13.391886,
+    "batteryLevel": 45,
+    "timestamp": "2019-03-10T09:14:52Z",
+    "price": 20,
+    "priceTime": 60,
+    "currency": "€"
+  },
+  {
+    "id": 6,
+    "name": "111111",
+    "description": "Electric Scooter",
+    "latitude": 52.523395,
+    "longitude": 13.391386,
+    "batteryLevel": 88,
+    "timestamp": "2019-03-10T12:18:52Z",
+    "price": 15,
+    "priceTime": 60,
+    "currency": "€"
+  }
+]

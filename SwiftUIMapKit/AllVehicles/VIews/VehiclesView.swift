@@ -18,3 +18,13 @@ struct VehiclesView: View {
         }
     }
 }
+
+#if DEBUG
+struct VehiclesView_Previews : PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            VehiclesView(vehicles: sampleVehicleResponse)
+        }
+    }
+}
+#endif
