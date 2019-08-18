@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9DBF402309704A00178836 /* ContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DBF3F2309704A00178836 /* ContenView.swift */; };
 		2BD2F2522306A6540030A671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2512306A6540030A671 /* AppDelegate.swift */; };
 		2BD2F2542306A6540030A671 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2532306A6540030A671 /* SceneDelegate.swift */; };
-		2BD2F2562306A6540030A671 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2552306A6540030A671 /* ContentView.swift */; };
 		2BD2F2582306A6580030A671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD2F2572306A6580030A671 /* Assets.xcassets */; };
 		2BD2F25B2306A6580030A671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD2F25A2306A6580030A671 /* Preview Assets.xcassets */; };
 		2BD2F25E2306A6580030A671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD2F25C2306A6580030A671 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,13 @@
 		2BD9F10F230955AF00A4DC78 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F10E230955AF00A4DC78 /* Endpoint.swift */; };
 		2BD9F111230956A800A4DC78 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F110230956A800A4DC78 /* Resource.swift */; };
 		2BD9F1142309575600A4DC78 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9F1132309575600A4DC78 /* MapKit.framework */; };
+		2BD9F116230959D400A4DC78 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F115230959D400A4DC78 /* Vehicle.swift */; };
+		2BD9F11823095E0900A4DC78 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F11723095E0900A4DC78 /* MapView.swift */; };
+		2BD9F11A23095E4000A4DC78 /* VehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F11923095E4000A4DC78 /* VehiclesView.swift */; };
+		2BD9F11D2309627600A4DC78 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F11C2309627600A4DC78 /* API.swift */; };
+		2BD9F11F2309628C00A4DC78 /* API+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F11E2309628C00A4DC78 /* API+Utilities.swift */; };
+		2BD9F1212309640F00A4DC78 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F1202309640F00A4DC78 /* Environment.swift */; };
+		2BD9F1232309693600A4DC78 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F1222309693600A4DC78 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B9DBF3F2309704A00178836 /* ContenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenView.swift; sourceTree = "<group>"; };
 		2BD2F24E2306A6540030A671 /* SwiftUIMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD2F2512306A6540030A671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD2F2532306A6540030A671 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BD2F2552306A6540030A671 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BD2F2572306A6580030A671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD2F25A2306A6580030A671 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BD2F25D2306A6580030A671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +59,13 @@
 		2BD9F10E230955AF00A4DC78 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2BD9F110230956A800A4DC78 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		2BD9F1132309575600A4DC78 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2BD9F115230959D400A4DC78 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		2BD9F11723095E0900A4DC78 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2BD9F11923095E4000A4DC78 /* VehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesView.swift; sourceTree = "<group>"; };
+		2BD9F11C2309627600A4DC78 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2BD9F11E2309628C00A4DC78 /* API+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Utilities.swift"; sourceTree = "<group>"; };
+		2BD9F1202309640F00A4DC78 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		2BD9F1222309693600A4DC78 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B9DBF41230972D600178836 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B9DBF3F2309704A00178836 /* ContenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B9DBF422309754C00178836 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2BD9F1202309640F00A4DC78 /* Environment.swift */,
+				2BD9F1222309693600A4DC78 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2B9DBF432309760500178836 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2F2532306A6540030A671 /* SceneDelegate.swift */,
+				2BD2F2512306A6540030A671 /* AppDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		2B9DBF442309763000178836 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2F2572306A6580030A671 /* Assets.xcassets */,
+				2BD2F25F2306A6580030A671 /* Info.plist */,
+				2BD2F25C2306A6580030A671 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		2BD2F2452306A6540030A671 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD2F2752306AC770030A671 /* App */,
-				2BD2F2782306AD0F0030A671 /* Verticals */,
+				2BD2F2792306AD1C0030A671 /* AllVehicles */,
 			);
 			path = SwiftUIMapKit;
 			sourceTree = "<group>";
@@ -122,6 +172,7 @@
 		2BD2F2732306AC3A0030A671 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2BD9F11B2309621500A4DC78 /* API */,
 				2BD2F27F2306AD9A0030A671 /* Models */,
 				2BD2F2742306AC450030A671 /* Networking */,
 			);
@@ -144,40 +195,31 @@
 		2BD2F2752306AC770030A671 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				2BD2F2512306A6540030A671 /* AppDelegate.swift */,
-				2BD2F2532306A6540030A671 /* SceneDelegate.swift */,
-				2BD2F2552306A6540030A671 /* ContentView.swift */,
-				2BD2F2572306A6580030A671 /* Assets.xcassets */,
-				2BD2F25C2306A6580030A671 /* LaunchScreen.storyboard */,
-				2BD2F25F2306A6580030A671 /* Info.plist */,
+				2B9DBF432309760500178836 /* AppDelegates */,
 				2BD2F2592306A6580030A671 /* Preview Content */,
+				2B9DBF442309763000178836 /* Resources */,
+				2B9DBF422309754C00178836 /* Store */,
+				2B9DBF41230972D600178836 /* Views */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		2BD2F2782306AD0F0030A671 /* Verticals */ = {
-			isa = PBXGroup;
-			children = (
-				2BD2F2792306AD1C0030A671 /* All */,
-			);
-			path = Verticals;
-			sourceTree = "<group>";
-		};
-		2BD2F2792306AD1C0030A671 /* All */ = {
+		2BD2F2792306AD1C0030A671 /* AllVehicles */ = {
 			isa = PBXGroup;
 			children = (
 				2BD2F27D2306AD5F0030A671 /* Actions */,
 				2BD2F27C2306AD510030A671 /* Reducers */,
-				2BD2F27E2306AD650030A671 /* Utils */,
 				2BD2F27B2306AD4A0030A671 /* ViewModels */,
 				2BD2F27A2306AD410030A671 /* VIews */,
 			);
-			path = All;
+			path = AllVehicles;
 			sourceTree = "<group>";
 		};
 		2BD2F27A2306AD410030A671 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
+				2BD9F11723095E0900A4DC78 /* MapView.swift */,
+				2BD9F11923095E4000A4DC78 /* VehiclesView.swift */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -203,16 +245,10 @@
 			path = Actions;
 			sourceTree = "<group>";
 		};
-		2BD2F27E2306AD650030A671 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		2BD2F27F2306AD9A0030A671 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2BD9F115230959D400A4DC78 /* Vehicle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +259,15 @@
 				2BD9F1132309575600A4DC78 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BD9F11B2309621500A4DC78 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2BD9F11C2309627600A4DC78 /* API.swift */,
+				2BD9F11E2309628C00A4DC78 /* API+Utilities.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,14 +371,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD9F1232309693600A4DC78 /* Store.swift in Sources */,
 				2BD9F111230956A800A4DC78 /* Resource.swift in Sources */,
 				2BD9F1092309549800A4DC78 /* URLSession+Extensions.swift in Sources */,
 				2BD2F2522306A6540030A671 /* AppDelegate.swift in Sources */,
+				2BD9F1212309640F00A4DC78 /* Environment.swift in Sources */,
+				2BD9F11823095E0900A4DC78 /* MapView.swift in Sources */,
+				2BD9F116230959D400A4DC78 /* Vehicle.swift in Sources */,
 				2BD9F10F230955AF00A4DC78 /* Endpoint.swift in Sources */,
+				2BD9F11F2309628C00A4DC78 /* API+Utilities.swift in Sources */,
 				2BD9F10B2309555000A4DC78 /* Networking+Errors.swift in Sources */,
 				2BD9F1072309547000A4DC78 /* ContentType.swift in Sources */,
+				2BD9F11A23095E4000A4DC78 /* VehiclesView.swift in Sources */,
 				2BD2F2542306A6540030A671 /* SceneDelegate.swift in Sources */,
-				2BD2F2562306A6540030A671 /* ContentView.swift in Sources */,
+				2B9DBF402309704A00178836 /* ContenView.swift in Sources */,
+				2BD9F11D2309627600A4DC78 /* API.swift in Sources */,
 				2BD9F10D2309559400A4DC78 /* Networking+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,7 +542,7 @@
 				DEVELOPMENT_ASSET_PATHS = "SwiftUIMapKit/App/Preview\\ Content";
 				DEVELOPMENT_TEAM = GW82A8W73Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIMapKit/App/Info.plist;
+				INFOPLIST_FILE = SwiftUIMapKit/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,7 +562,7 @@
 				DEVELOPMENT_ASSET_PATHS = "SwiftUIMapKit/App/Preview\\ Content";
 				DEVELOPMENT_TEAM = GW82A8W73Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIMapKit/App/Info.plist;
+				INFOPLIST_FILE = SwiftUIMapKit/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,7 +10,7 @@ import Combine
 import Foundation
 
 final class Resource<A>: ObservableObject {
-    // todo is there a nicer way to have an empty publisher?
+    // todo is there a better way to have an empty publisher?
     var objectWillChange: AnyPublisher<A?, Never> = Publishers.Sequence<[A?], Never>(sequence: []).eraseToAnyPublisher()
     @Published var value: A? = nil
     let endpoint: Endpoint<A>
