@@ -9,4 +9,3 @@
 func expected200to300(_ code: Int) -> Bool {
     return code >= 200 && code < 300
 }
-

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B40371523097EDB005A0FC1 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40371423097EDB005A0FC1 /* VehicleAnnotation.swift */; };
+		2B403717230984A6005A0FC1 /* VehicleAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B403716230984A6005A0FC1 /* VehicleAnnotationView.swift */; };
 		2B9DBF402309704A00178836 /* ContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DBF3F2309704A00178836 /* ContenView.swift */; };
 		2BD2F2522306A6540030A671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2512306A6540030A671 /* AppDelegate.swift */; };
 		2BD2F2542306A6540030A671 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2532306A6540030A671 /* SceneDelegate.swift */; };
@@ -21,7 +23,7 @@
 		2BD9F10F230955AF00A4DC78 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F10E230955AF00A4DC78 /* Endpoint.swift */; };
 		2BD9F111230956A800A4DC78 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F110230956A800A4DC78 /* Resource.swift */; };
 		2BD9F1142309575600A4DC78 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9F1132309575600A4DC78 /* MapKit.framework */; };
-		2BD9F116230959D400A4DC78 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F115230959D400A4DC78 /* Vehicle.swift */; };
+		2BD9F116230959D400A4DC78 /* VehicleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F115230959D400A4DC78 /* VehicleResponse.swift */; };
 		2BD9F11823095E0900A4DC78 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F11723095E0900A4DC78 /* MapView.swift */; };
 		2BD9F11A23095E4000A4DC78 /* VehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F11923095E4000A4DC78 /* VehiclesView.swift */; };
 		2BD9F11D2309627600A4DC78 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F11C2309627600A4DC78 /* API.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B40371423097EDB005A0FC1 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
+		2B403716230984A6005A0FC1 /* VehicleAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotationView.swift; sourceTree = "<group>"; };
 		2B9DBF3F2309704A00178836 /* ContenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenView.swift; sourceTree = "<group>"; };
 		2BD2F24E2306A6540030A671 /* SwiftUIMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD2F2512306A6540030A671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +63,7 @@
 		2BD9F10E230955AF00A4DC78 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2BD9F110230956A800A4DC78 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		2BD9F1132309575600A4DC78 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2BD9F115230959D400A4DC78 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		2BD9F115230959D400A4DC78 /* VehicleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleResponse.swift; sourceTree = "<group>"; };
 		2BD9F11723095E0900A4DC78 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2BD9F11923095E4000A4DC78 /* VehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesView.swift; sourceTree = "<group>"; };
 		2BD9F11C2309627600A4DC78 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -220,6 +224,7 @@
 			children = (
 				2BD9F11723095E0900A4DC78 /* MapView.swift */,
 				2BD9F11923095E4000A4DC78 /* VehiclesView.swift */,
+				2B403716230984A6005A0FC1 /* VehicleAnnotationView.swift */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 		2BD2F27B2306AD4A0030A671 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2B40371423097EDB005A0FC1 /* VehicleAnnotation.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -248,7 +254,7 @@
 		2BD2F27F2306AD9A0030A671 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2BD9F115230959D400A4DC78 /* Vehicle.swift */,
+				2BD9F115230959D400A4DC78 /* VehicleResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -371,13 +377,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B40371523097EDB005A0FC1 /* VehicleAnnotation.swift in Sources */,
 				2BD9F1232309693600A4DC78 /* Store.swift in Sources */,
 				2BD9F111230956A800A4DC78 /* Resource.swift in Sources */,
 				2BD9F1092309549800A4DC78 /* URLSession+Extensions.swift in Sources */,
 				2BD2F2522306A6540030A671 /* AppDelegate.swift in Sources */,
 				2BD9F1212309640F00A4DC78 /* Environment.swift in Sources */,
+				2B403717230984A6005A0FC1 /* VehicleAnnotationView.swift in Sources */,
 				2BD9F11823095E0900A4DC78 /* MapView.swift in Sources */,
-				2BD9F116230959D400A4DC78 /* Vehicle.swift in Sources */,
+				2BD9F116230959D400A4DC78 /* VehicleResponse.swift in Sources */,
 				2BD9F10F230955AF00A4DC78 /* Endpoint.swift in Sources */,
 				2BD9F11F2309628C00A4DC78 /* API+Utilities.swift in Sources */,
 				2BD9F10B2309555000A4DC78 /* Networking+Errors.swift in Sources */,

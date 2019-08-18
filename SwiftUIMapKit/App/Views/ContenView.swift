@@ -11,7 +11,7 @@ import SwiftUI
 struct ContenView: View {
     @ObservedObject var store = sharedStore
     var body: some View {
-            Group {
+        Group {
             if !store.loaded {
                 Text("Loading...")
             } else {
@@ -24,9 +24,9 @@ struct ContenView: View {
 }
 
 #if DEBUG
-struct ContenView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContenView()
+    struct ContenView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContenView()
+        }
     }
-}
 #endif

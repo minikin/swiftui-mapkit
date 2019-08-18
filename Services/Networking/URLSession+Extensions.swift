@@ -10,26 +10,26 @@ import Foundation
 
 extension URLSession {
     @discardableResult
-    func load<A>(_ e: Endpoint<A>, onComplete: @escaping (Result<A, Error>) -> ()) -> URLSessionDataTask {
+    func load<A>(_ e: Endpoint<A>, onComplete: @escaping (Result<A, Error>) -> Void) -> URLSessionDataTask {
         let r = e.request
-        let task = dataTask(with: r, completionHandler: { data, resp, err in
+        let task = dataTask(with: r, completionHandler: { data, resp, _ in
             guard let h = resp as? HTTPURLResponse else {
                 onComplete(.failure(UnknownError()))
                 return
             }
-            
+
             guard e.expectedStatusCode(h.statusCode) else {
                 onComplete(.failure(WrongStatusCodeError(statusCode: h.statusCode, response: h)))
                 return
             }
-            
-            onComplete(e.parse(data,resp))
+
+            onComplete(e.parse(data, resp))
         })
         task.resume()
         return task
     }
 
-    public func onDelegateQueue(_ f: @escaping () -> ()) {
-        self.delegateQueue.addOperation(f)
+    public func onDelegateQueue(_ f: @escaping () -> Void) {
+        delegateQueue.addOperation(f)
     }
 }

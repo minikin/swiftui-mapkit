@@ -34,7 +34,6 @@
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array>
 		<string>MKDirectionsModeCar</string>
-		<string>MKDirectionsModeOther</string>
 		<string>MKDirectionsModePedestrian</string>
 		<string>MKDirectionsModeRideShare</string>
 		<string>MKDirectionsModeTaxi</string>

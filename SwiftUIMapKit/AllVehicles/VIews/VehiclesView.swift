@@ -9,9 +9,9 @@
 import SwiftUI
 
 struct VehiclesView: View {
-    let vehicles: [Vehicle]
+    let vehicles: [VehicleResponse]
     @ObservedObject var store = sharedStore
-    
+
     var body: some View {
         VStack {
             MapView(with: vehicles).edgesIgnoringSafeArea(.top)
@@ -19,10 +19,10 @@ struct VehiclesView: View {
     }
 }
 
-//#if DEBUG
-//struct AllVehicles_Previews: PreviewProvider {
+// #if DEBUG
+// struct AllVehicles_Previews: PreviewProvider {
 //    static var previews: some View {
 //        VehiclesView()
 //    }
-//}
-//#endif
+// }
+// #endif

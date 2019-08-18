@@ -12,11 +12,11 @@ struct Endpoint<A> {
     public enum Method {
         case get, post, put, patch
     }
-    
+
     public var request: URLRequest
     var parse: (Data?, URLResponse?) -> Result<A, Error>
     var expectedStatusCode: (Int) -> Bool = expected200to300
-    
+
     func map<B>(_ f: @escaping (A) -> B) -> Endpoint<B> {
         return Endpoint<B>(request: request, expectedStatusCode: expectedStatusCode, parse: { value, response in
             self.parse(value, response).map(f)
@@ -33,10 +33,10 @@ struct Endpoint<A> {
          url: URL, accept: ContentType? = nil,
          contentType: ContentType? = nil,
          body: Data? = nil,
-         headers: [String:String] = [:],
+         headers: [String: String] = [:],
          expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
          timeOutInterval: TimeInterval = 10,
-         query: [String:String] = [:],
+         query: [String: String] = [:],
          parse: @escaping (Data?, URLResponse?) -> Result<A, Error>) {
         
         var comps = URLComponents(string: url.absoluteString)!
@@ -61,7 +61,7 @@ struct Endpoint<A> {
         self.expectedStatusCode = expectedStatusCode
         self.parse = parse
     }
-    
+
     init(request: URLRequest,
          expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
          parse: @escaping (Data?, URLResponse?) -> Result<A, Error>) {
@@ -90,12 +90,11 @@ extension Endpoint.Method {
 }
 
 extension Endpoint where A == () {
-     init(_ method: Method, url: URL,
-          accept: ContentType? = nil,
-          headers: [String:String] = [:],
-          expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
-          query: [String:String] = [:]) {
-        
+    init(_ method: Method, url: URL,
+         accept: ContentType? = nil,
+         headers: [String: String] = [:],
+         expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
+         query: [String: String] = [:]) {
         self.init(method, url: url,
                   accept: accept,
                   headers: headers,
@@ -103,27 +102,33 @@ extension Endpoint where A == () {
                   query: query, parse: { _, _ in .success(()) })
     }
 
-     init<B: Codable>(json method: Method,
-                      url: URL,
-                      accept: ContentType? = .json,
-                      body: B, headers: [String:String] = [:],
-                      expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
-                      query: [String:String] = [:]) {
+    init<B: Codable>(json method: Method,
+                     url: URL,
+                     accept: ContentType? = .json,
+                     body: B, headers: [String: String] = [:],
+                     expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
+                     query: [String: String] = [:]) {
         let b = try! JSONEncoder().encode(body)
-        self.init(method, url: url, accept: accept, contentType: .json, body: b, headers: headers, expectedStatusCode: expectedStatusCode, query: query, parse: { _, _ in .success(()) })
+        self.init(method, url: url,
+                  accept: accept,
+                  contentType: .json,
+                  body: b,
+                  headers: headers,
+                  expectedStatusCode: expectedStatusCode,
+                  query: query, parse: { _, _ in .success(()) })
     }
 }
 
 extension Endpoint where A: Decodable {
-     init(json method: Method,
-          url: URL,
-          accept: ContentType = .json,
-          headers: [String: String] = [:],
-          expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
-          query: [String: String] = [:],
-          decoder: JSONDecoder? = nil) {
+    init(json method: Method,
+         url: URL,
+         accept: ContentType = .json,
+         headers: [String: String] = [:],
+         expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
+         query: [String: String] = [:],
+         decoder: JSONDecoder? = nil) {
         let d = decoder ?? JSONDecoder()
-        
+
         self.init(method,
                   url: url,
                   accept: accept,
@@ -131,23 +136,28 @@ extension Endpoint where A: Decodable {
                   headers: headers,
                   expectedStatusCode: expectedStatusCode,
                   query: query) { data, _ in
-            return Result {
+            Result {
                 guard let dat = data else { throw NoDataError() }
                 return try d.decode(A.self, from: dat)
             }
         }
     }
 
-     init<B: Codable>(json method: Method,
-                      url: URL, accept: ContentType = .json,
-                      body: B? = nil,
-                      headers: [String: String] = [:],
-                      expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
-                      query: [String: String] = [:]) {
-        
+    init<B: Codable>(json method: Method,
+                     url: URL, accept: ContentType = .json,
+                     body: B? = nil,
+                     headers: [String: String] = [:],
+                     expectedStatusCode: @escaping (Int) -> Bool = expected200to300,
+                     query: [String: String] = [:]) {
         let b = body.map { try! JSONEncoder().encode($0) }
-        self.init(method, url: url, accept: accept, contentType: .json, body: b, headers: headers, expectedStatusCode: expectedStatusCode, query: query) { data, _ in
-            return Result {
+        self.init(method, url: url,
+                  accept: accept,
+                  contentType: .json,
+                  body: b,
+                  headers: headers,
+                  expectedStatusCode: expectedStatusCode,
+                  query: query) { data, _ in
+            Result {
                 guard let dat = data else { throw NoDataError() }
                 return try JSONDecoder().decode(A.self, from: dat)
             }

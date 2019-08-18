@@ -9,11 +9,11 @@
 import Foundation
 
 struct NoDataError: Error {
-    public init() { }
+    public init() {}
 }
 
 struct UnknownError: Error {
-    public init() { }
+    public init() {}
 }
 
 struct WrongStatusCodeError: Error {
