@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct VehicleResponse: Codable {
+struct VehicleResponse: Codable, Equatable {
     let id: Int
     let name: String
     let description: String

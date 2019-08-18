@@ -10,13 +10,15 @@
 		2B40371523097EDB005A0FC1 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40371423097EDB005A0FC1 /* VehicleAnnotation.swift */; };
 		2B403717230984A6005A0FC1 /* VehicleAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B403716230984A6005A0FC1 /* VehicleAnnotationView.swift */; };
 		2B40371A2309874B005A0FC1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4037192309874B005A0FC1 /* LocationManager.swift */; };
+		2B4037262309EF2C005A0FC1 /* Test+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4037252309EF2C005A0FC1 /* Test+Utilities.swift */; };
+		2B4037282309F219005A0FC1 /* VehicleResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4037272309F219005A0FC1 /* VehicleResponseTests.swift */; };
+		2B40372A2309FB9B005A0FC1 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4037292309FB9B005A0FC1 /* Data+Extensions.swift */; };
 		2B9DBF402309704A00178836 /* ContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DBF3F2309704A00178836 /* ContenView.swift */; };
 		2BD2F2522306A6540030A671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2512306A6540030A671 /* AppDelegate.swift */; };
 		2BD2F2542306A6540030A671 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2532306A6540030A671 /* SceneDelegate.swift */; };
 		2BD2F2582306A6580030A671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD2F2572306A6580030A671 /* Assets.xcassets */; };
 		2BD2F25B2306A6580030A671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD2F25A2306A6580030A671 /* Preview Assets.xcassets */; };
 		2BD2F25E2306A6580030A671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD2F25C2306A6580030A671 /* LaunchScreen.storyboard */; };
-		2BD2F2692306A6580030A671 /* SwiftUIMapKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2682306A6580030A671 /* SwiftUIMapKitTests.swift */; };
 		2BD9F1072309547000A4DC78 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F1062309547000A4DC78 /* ContentType.swift */; };
 		2BD9F1092309549800A4DC78 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F1082309549800A4DC78 /* URLSession+Extensions.swift */; };
 		2BD9F10B2309555000A4DC78 /* Networking+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9F10A2309555000A4DC78 /* Networking+Errors.swift */; };
@@ -47,6 +49,9 @@
 		2B40371423097EDB005A0FC1 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 		2B403716230984A6005A0FC1 /* VehicleAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotationView.swift; sourceTree = "<group>"; };
 		2B4037192309874B005A0FC1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2B4037252309EF2C005A0FC1 /* Test+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+Utilities.swift"; sourceTree = "<group>"; };
+		2B4037272309F219005A0FC1 /* VehicleResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleResponseTests.swift; sourceTree = "<group>"; };
+		2B4037292309FB9B005A0FC1 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		2B9DBF3F2309704A00178836 /* ContenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenView.swift; sourceTree = "<group>"; };
 		2BD2F24E2306A6540030A671 /* SwiftUIMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD2F2512306A6540030A671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +61,6 @@
 		2BD2F25D2306A6580030A671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BD2F25F2306A6580030A671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BD2F2642306A6580030A671 /* SwiftUIMapKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIMapKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BD2F2682306A6580030A671 /* SwiftUIMapKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMapKitTests.swift; sourceTree = "<group>"; };
 		2BD2F26A2306A6580030A671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BD9F1062309547000A4DC78 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		2BD9F1082309549800A4DC78 /* URLSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
@@ -99,6 +103,23 @@
 				2B4037192309874B005A0FC1 /* LocationManager.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		2B4037232309EE6D005A0FC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B4037272309F219005A0FC1 /* VehicleResponseTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B4037242309EE94005A0FC1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2B4037252309EF2C005A0FC1 /* Test+Utilities.swift */,
+				2B4037292309FB9B005A0FC1 /* Data+Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		2B9DBF41230972D600178836 /* Views */ = {
@@ -177,8 +198,9 @@
 		2BD2F2672306A6580030A671 /* SwiftUIMapKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2BD2F2682306A6580030A671 /* SwiftUIMapKitTests.swift */,
 				2BD2F26A2306A6580030A671 /* Info.plist */,
+				2B4037232309EE6D005A0FC1 /* Models */,
+				2B4037242309EE94005A0FC1 /* Utilities */,
 			);
 			path = SwiftUIMapKitTests;
 			sourceTree = "<group>";
@@ -398,7 +420,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD2F2692306A6580030A671 /* SwiftUIMapKitTests.swift in Sources */,
+				2B40372A2309FB9B005A0FC1 /* Data+Extensions.swift in Sources */,
+				2B4037282309F219005A0FC1 /* VehicleResponseTests.swift in Sources */,
+				2B4037262309EF2C005A0FC1 /* Test+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

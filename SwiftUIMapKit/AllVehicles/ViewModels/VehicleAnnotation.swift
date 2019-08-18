@@ -40,8 +40,7 @@ extension VehicleAnnotation {
     func mapItem() -> MKMapItem {
         let placemark = MKPlacemark(coordinate: coordinate)
         let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = vehicle.name
-        print(mapItem)
+        mapItem.name = vehicle.description
         return mapItem
     }
 }

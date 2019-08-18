@@ -33,7 +33,6 @@ final class Resource<A>: ObservableObject {
     // MARK: - Helpers
 
     func reload() {
-        print(endpoint.request.url!)
         URLSession.shared.load(endpoint) { result in
             DispatchQueue.main.async {
                 self.value = try? result.get()
