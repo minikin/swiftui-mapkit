@@ -12,4 +12,5 @@ var Current = Environment()
 
 struct Environment {
     let api = API()
+    let locationManager = LocationManager()
 }

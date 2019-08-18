@@ -18,11 +18,3 @@ struct VehiclesView: View {
         }
     }
 }
-
-// #if DEBUG
-// struct AllVehicles_Previews: PreviewProvider {
-//    static var previews: some View {
-//        VehiclesView()
-//    }
-// }
-// #endif

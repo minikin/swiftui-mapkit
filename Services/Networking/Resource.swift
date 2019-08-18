@@ -10,11 +10,15 @@ import Combine
 import Foundation
 
 final class Resource<A>: ObservableObject {
-    // todo is there a better way to have an empty publisher?
+    // MARK: - Instance Properties
+
+    // FIXME: - is there a better way to have an empty publisher?
     var objectWillChange: AnyPublisher<A?, Never> = Publishers.Sequence<[A?], Never>(sequence: []).eraseToAnyPublisher()
     @Published var value: A? = nil
     let endpoint: Endpoint<A>
     private var firstLoad = true
+
+    // MARK: - Initialization
 
     init(endpoint: Endpoint<A>) {
         self.endpoint = endpoint
@@ -25,6 +29,8 @@ final class Resource<A>: ObservableObject {
 
         }).eraseToAnyPublisher()
     }
+
+    // MARK: - Helpers
 
     func reload() {
         print(endpoint.request.url!)

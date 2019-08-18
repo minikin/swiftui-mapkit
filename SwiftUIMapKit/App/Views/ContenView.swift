@@ -22,11 +22,3 @@ struct ContenView: View {
         }
     }
 }
-
-#if DEBUG
-    struct ContenView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContenView()
-        }
-    }
-#endif

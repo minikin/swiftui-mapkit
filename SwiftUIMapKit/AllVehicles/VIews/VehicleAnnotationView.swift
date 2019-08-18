@@ -12,16 +12,16 @@ final class VehicleAnnotationView: MKAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {
             guard let vehicleAnnotation = newValue as? VehicleAnnotation else { return }
-
             canShowCallout = true
             calloutOffset = CGPoint(x: -5, y: 5)
             let mapsButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 30, height: 30)))
+            mapsButton.setBackgroundImage(UIImage(named: "Maps-icon"), for: UIControl.State())
             rightCalloutAccessoryView = mapsButton
 
             let detailLabel = UILabel()
             detailLabel.numberOfLines = 0
             detailLabel.font = detailLabel.font.withSize(12)
-            detailLabel.text = vehicleAnnotation.vehicle.description
+            detailLabel.text = vehicleAnnotation.vehicleDescription()
             detailCalloutAccessoryView = detailLabel
         }
     }

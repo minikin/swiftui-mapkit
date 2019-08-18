@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B40371523097EDB005A0FC1 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40371423097EDB005A0FC1 /* VehicleAnnotation.swift */; };
 		2B403717230984A6005A0FC1 /* VehicleAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B403716230984A6005A0FC1 /* VehicleAnnotationView.swift */; };
+		2B40371A2309874B005A0FC1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4037192309874B005A0FC1 /* LocationManager.swift */; };
 		2B9DBF402309704A00178836 /* ContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DBF3F2309704A00178836 /* ContenView.swift */; };
 		2BD2F2522306A6540030A671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2512306A6540030A671 /* AppDelegate.swift */; };
 		2BD2F2542306A6540030A671 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2F2532306A6540030A671 /* SceneDelegate.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		2B40371423097EDB005A0FC1 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 		2B403716230984A6005A0FC1 /* VehicleAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotationView.swift; sourceTree = "<group>"; };
+		2B4037192309874B005A0FC1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2B9DBF3F2309704A00178836 /* ContenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenView.swift; sourceTree = "<group>"; };
 		2BD2F24E2306A6540030A671 /* SwiftUIMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD2F2512306A6540030A671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B40371823098736005A0FC1 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				2B4037192309874B005A0FC1 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		2B9DBF41230972D600178836 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD9F11B2309621500A4DC78 /* API */,
+				2B40371823098736005A0FC1 /* Location */,
 				2BD2F27F2306AD9A0030A671 /* Models */,
 				2BD2F2742306AC450030A671 /* Networking */,
 			);
@@ -211,8 +222,6 @@
 		2BD2F2792306AD1C0030A671 /* AllVehicles */ = {
 			isa = PBXGroup;
 			children = (
-				2BD2F27D2306AD5F0030A671 /* Actions */,
-				2BD2F27C2306AD510030A671 /* Reducers */,
 				2BD2F27B2306AD4A0030A671 /* ViewModels */,
 				2BD2F27A2306AD410030A671 /* VIews */,
 			);
@@ -223,8 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				2BD9F11723095E0900A4DC78 /* MapView.swift */,
-				2BD9F11923095E4000A4DC78 /* VehiclesView.swift */,
 				2B403716230984A6005A0FC1 /* VehicleAnnotationView.swift */,
+				2BD9F11923095E4000A4DC78 /* VehiclesView.swift */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -235,20 +244,6 @@
 				2B40371423097EDB005A0FC1 /* VehicleAnnotation.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		2BD2F27C2306AD510030A671 /* Reducers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reducers;
-			sourceTree = "<group>";
-		};
-		2BD2F27D2306AD5F0030A671 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Actions;
 			sourceTree = "<group>";
 		};
 		2BD2F27F2306AD9A0030A671 /* Models */ = {
@@ -394,6 +389,7 @@
 				2BD2F2542306A6540030A671 /* SceneDelegate.swift in Sources */,
 				2B9DBF402309704A00178836 /* ContenView.swift in Sources */,
 				2BD9F11D2309627600A4DC78 /* API.swift in Sources */,
+				2B40371A2309874B005A0FC1 /* LocationManager.swift in Sources */,
 				2BD9F10D2309559400A4DC78 /* Networking+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

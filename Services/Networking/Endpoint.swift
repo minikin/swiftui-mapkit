@@ -9,11 +9,11 @@
 import Foundation
 
 struct Endpoint<A> {
-    public enum Method {
+    enum Method {
         case get, post, put, patch
     }
 
-    public var request: URLRequest
+    var request: URLRequest
     var parse: (Data?, URLResponse?) -> Result<A, Error>
     var expectedStatusCode: (Int) -> Bool = expected200to300
 
@@ -38,11 +38,11 @@ struct Endpoint<A> {
          timeOutInterval: TimeInterval = 10,
          query: [String: String] = [:],
          parse: @escaping (Data?, URLResponse?) -> Result<A, Error>) {
-        
         var comps = URLComponents(string: url.absoluteString)!
         comps.queryItems = comps.queryItems ?? []
         comps.queryItems!.append(contentsOf: query.map { URLQueryItem(name: $0.0, value: $0.1) })
         request = URLRequest(url: comps.url!)
+
         if let a = accept {
             request.setValue(a.rawValue, forHTTPHeaderField: "Accept")
         }
@@ -72,7 +72,7 @@ struct Endpoint<A> {
 }
 
 extension Endpoint: CustomStringConvertible {
-    public var description: String {
+    var description: String {
         let data = request.httpBody ?? Data()
         return "\(request.httpMethod ?? "GET") \(request.url?.absoluteString ?? "<no url>") \(String(data: data, encoding: .utf8) ?? "")"
     }

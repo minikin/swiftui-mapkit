@@ -10,35 +10,69 @@ import MapKit
 import SwiftUI
 
 struct MapView: UIViewRepresentable {
-    let vehicles: [VehicleResponse]
+    // MARK: - Instance Properties
+
+    let vehicles: [VehicleAnnotation]
+
+    // MARK: - Initialization
 
     init(with vehicles: [VehicleResponse]) {
-        self.vehicles = vehicles
+        self.vehicles = vehicles.map { VehicleAnnotation(with: $0) }
     }
 
-    func makeUIView(context _: Context) -> MKMapView {
-        MKMapView(frame: .zero)
+    // MARK: - View LifeCycle
+
+    func makeUIView(context: Context) -> MKMapView {
+        let mapView = MKMapView(frame: .zero)
+        mapView.delegate = context.coordinator
+        return mapView
     }
 
     func updateUIView(_ view: MKMapView, context _: Context) {
-        print("vehicles", vehicles)
+        view.addAnnotations(vehicles)
+        view.showAnnotations(vehicles, animated: true)
+    }
 
-        guard let item = vehicles.first else { return }
-        let coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
-        let place = MKPlacemark(coordinate: coordinate)
+    // MARK: - Coordinator & MKMapViewDelegate
 
-        view.addAnnotation(place)
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
 
-        let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-        let region = MKCoordinateRegion(center: coordinate, span: span)
-        view.setRegion(region, animated: true)
+    final class Coordinator: NSObject, MKMapViewDelegate {
+        var mapView: MapView
+
+        init(_ mapView: MapView) {
+            self.mapView = mapView
+        }
+
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            if annotation is MKUserLocation { return nil }
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "pin")
+            if annotationView == nil {
+                annotationView = VehicleAnnotationView(annotation: annotation, reuseIdentifier: "pin")
+                annotationView?.canShowCallout = false
+            } else {
+                annotationView?.annotation = annotation
+            }
+            annotationView?.image = UIImage(named: "Flag")
+            return annotationView
+        }
+
+        func mapView(_: MKMapView, didDeselect view: MKAnnotationView) {
+            if view.isKind(of: VehicleAnnotationView.self) {
+                for subview in view.subviews {
+                    subview.removeFromSuperview()
+                }
+            }
+        }
+
+        func mapView(_: MKMapView,
+                     annotationView view: MKAnnotationView,
+                     calloutAccessoryControlTapped _: UIControl) {
+            let location = view.annotation as! VehicleAnnotation
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+            location.mapItem().openInMaps(launchOptions: launchOptions)
+        }
     }
 }
-
-// #if DEBUG
-// struct MapView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MapView()
-//    }
-// }
-// #endif

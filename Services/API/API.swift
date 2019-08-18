@@ -9,13 +9,17 @@
 import Foundation
 
 struct API {
-    var baseURL: URL
+    // MARK: - Instance Properties
 
-    init(baseURL: URL = URL(string: "https://my-json-server.typicode.com/FlashScooters/Challenge")!) {
-        self.baseURL = baseURL
-    }
+    private var baseURL: URL
 
     var vehicles: Endpoint<[VehicleResponse]> {
         return Endpoint(json: .get, url: baseURL.appendingPathComponent("vehicles"), decoder: decoder)
+    }
+
+    // MARK: - Initialization
+
+    init(baseURL: URL = URL(string: "https://my-json-server.typicode.com/FlashScooters/Challenge")!) {
+        self.baseURL = baseURL
     }
 }

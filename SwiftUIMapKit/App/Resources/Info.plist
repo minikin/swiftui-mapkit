@@ -38,6 +38,10 @@
 		<string>MKDirectionsModeRideShare</string>
 		<string>MKDirectionsModeTaxi</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>To show you scooters nearby</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To show you scooters nearby</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
