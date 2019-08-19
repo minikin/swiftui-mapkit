@@ -6,7 +6,7 @@ SwiftUI meets MapKit is an iOS demo application.
 
 **State:** development
 
-**Point People:** [Sasha Prokhorenko](mailto: djminikin@gmail.com)
+**Point People:** [Sasha Prokhorenko](mailto:djminikin@gmail.com)
 
 **CI:** _ci status_
 
@@ -17,6 +17,7 @@ SwiftUI meets MapKit is an iOS demo application.
 - [Running the project](#running-the-project)
 - [Development](#development)
 - [Run Tests](#run-tests)
+- [Warnings](#warnings)
 
 ## Requirements
 
@@ -26,7 +27,7 @@ SwiftUI meets MapKit is an iOS demo application.
 
 ## Dependencies
 
-In the project we don't use any third party dependencies.
+In the project I don't use any third party dependencies.
 
 ---
 
@@ -72,3 +73,9 @@ The SwiftUIMapKit project contains one unit test target: `SwiftUIMapKitTests`.
 - To run all tests from Xcode, select the Scheme `SwiftUIMapKit` and press _CMD_ + _U_ or select test from Xcode's dropdown.
 
 ---
+
+## Warnings
+
+During development, I experienced unpredicted behavior of Xcode and Simulator
+like not correct test coverage and even kernel panics.
+So please, keep in mind that Xcode 11, Combine and SwiftUI is still in Beta.
