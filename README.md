@@ -8,7 +8,7 @@ SwiftUI meets MapKit is an iOS demo application.
 
 **Point People:** [Sasha Prokhorenko](mailto:djminikin@gmail.com)
 
-**CI:** _ci status_
+**CI:** [![Build Status](https://app.bitrise.io/app/693d5288e6e84421/status.svg?token=LSxCFwkI7mKZNc9SVNhM9w)](https://app.bitrise.io/app/693d5288e6e84421)
 
 ---
 
