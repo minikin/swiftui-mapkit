@@ -8,7 +8,9 @@
 
 @testable import SwiftUIMapKit
 import XCTest
+import SwiftUIMapKitServices
 
+// TODO: - Move those tests to SwiftUIMapKitServices
 class VehicleResponseTests: XCTestCase {
         
     override func setUp() {
