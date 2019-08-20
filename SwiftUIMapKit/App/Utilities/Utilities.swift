@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUIMapKitServices
 
 let sampleVehicleResponse: [VehicleResponse] = loadLocalJson(name: "vehicles")
 

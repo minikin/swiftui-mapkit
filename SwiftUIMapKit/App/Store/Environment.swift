@@ -6,6 +6,7 @@
 //  Copyright © 2019 Sasha Prokhorenko. All rights reserved.
 //
 
+import SwiftUIMapKitServices
 
 /// Current is the global instance of the Environment.
 /// Its purpose is to provide convenient access to the instances that should be shared

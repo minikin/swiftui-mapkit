@@ -8,6 +8,7 @@
 
 import Combine
 import SwiftUI
+import SwiftUIMapKitServices
 
 let sharedStore = Store()
 

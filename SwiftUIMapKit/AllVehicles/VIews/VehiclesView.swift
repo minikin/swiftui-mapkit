@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SwiftUIMapKitServices
 
 struct VehiclesView: View {
     let vehicles: [VehicleResponse]

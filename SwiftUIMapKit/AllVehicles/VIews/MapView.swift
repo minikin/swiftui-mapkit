@@ -8,6 +8,7 @@
 
 import MapKit
 import SwiftUI
+import SwiftUIMapKitServices
 
 struct MapView: UIViewRepresentable {
     // MARK: - Instance Properties

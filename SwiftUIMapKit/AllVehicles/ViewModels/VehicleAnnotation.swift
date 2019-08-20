@@ -8,6 +8,7 @@
 
 import Foundation
 import MapKit
+import SwiftUIMapKitServices
 
 final class VehicleAnnotation: NSObject, MKAnnotation {
     // MARK: - Instance Properties
