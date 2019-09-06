@@ -30,8 +30,7 @@
       enableThreadSanitizer = "YES"
       systemAttachmentLifetime = "keepNever"
       userAttachmentLifetime = "keepAlways"
-      codeCoverageEnabled = "YES"
-      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      codeCoverageEnabled = "YES">
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
