@@ -84,4 +84,4 @@ The SwiftUIMapKit project contains one unit test target: `SwiftUIMapKitTests`.
 
 During development, I experienced unpredicted behavior of Xcode and Simulator
 like not correct test coverage and even kernel panics.
-So please, keep in mind that Xcode 11, Combine and SwiftUI is still in Beta.
+So please, keep in mind that Xcode 11, Combine and SwiftUI are still in Beta.
