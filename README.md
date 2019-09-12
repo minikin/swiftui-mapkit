@@ -28,7 +28,7 @@ SwiftUI meets MapKit is an iOS demo application.
 ## Requirements
 
 - iOS 13.0+ / macOS 10.14.5+
-- Xcode 11.0 beta 6
+- Xcode 11.0+
 - Swift 5.1+
 
 ## Dependencies
