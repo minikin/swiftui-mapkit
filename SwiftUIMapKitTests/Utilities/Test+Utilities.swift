@@ -15,7 +15,7 @@ func assertThrowsKeyNotFound<T: Decodable>(_ expectedKey: String,
                                            file: StaticString = #file,
                                            line: UInt = #line) {
     XCTAssertThrowsError(try JSONDecoder().decode(decoding, from: data), file: file, line: line) { error in
-        if case .keyNotFound(let key, _)? = error as? DecodingError {
+        if case let .keyNotFound(key, _)? = error as? DecodingError {
             XCTAssertEqual(expectedKey, key.stringValue, "Expected missing key '\(key.stringValue)' to equal '\(expectedKey)'.", file: file, line: line)
         } else {
             XCTFail("Expected '.keyNotFound(\(expectedKey))' but got \(error)", file: file, line: line)
