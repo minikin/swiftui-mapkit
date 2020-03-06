@@ -15,18 +15,16 @@ struct ContentView: View {
             if !store.loaded {
                 Text("Loading...")
             } else {
-                NavigationView {
-                    VehiclesView(vehicles: store.vehicles)
-                }
+                NavigationView { VehiclesView(vehicles: store.vehicles) }
             }
         }
     }
 }
 
 #if DEBUG
-struct ContetView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    struct ContetView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
 #endif
