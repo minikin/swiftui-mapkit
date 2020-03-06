@@ -7,16 +7,15 @@
 //
 
 @testable import SwiftUIMapKit
-import XCTest
 import SwiftUIMapKitServices
+import XCTest
 
 // TODO: - Move those tests to SwiftUIMapKitServices
 class VehicleResponseTests: XCTestCase {
-        
     override func setUp() {
         super.setUp()
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }
@@ -45,7 +44,6 @@ class VehicleResponseTests: XCTestCase {
         let vehicleResponse = try JSONDecoder().decode(VehicleResponse.self, from: fixtureTwo)
         XCTAssertNotEqual(vehicleResponse, vehicle)
     }
-    
 }
 
 private let vehicle = VehicleResponse(id: 1,
