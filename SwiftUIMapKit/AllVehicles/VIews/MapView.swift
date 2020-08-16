@@ -70,7 +70,8 @@ struct MapView: UIViewRepresentable {
 
         func mapView(_: MKMapView,
                      annotationView view: MKAnnotationView,
-                     calloutAccessoryControlTapped _: UIControl) {
+                     calloutAccessoryControlTapped _: UIControl)
+        {
             let location = view.annotation as! VehicleAnnotation
             let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
             location.mapItem().openInMaps(launchOptions: launchOptions)

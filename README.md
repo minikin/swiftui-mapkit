@@ -8,7 +8,7 @@ SwiftUI meets MapKit is an iOS demo application.
 
 **State:** development
 
-**Point People:** [Sasha Prokhorenko](mailto:djminikin@gmail.com)
+**Point People:** [@minikin](https://github.com/minikin)
 
 **CI:** [![Build Status](https://app.bitrise.io/app/693d5288e6e84421/status.svg?token=LSxCFwkI7mKZNc9SVNhM9w)](https://app.bitrise.io/app/693d5288e6e84421)
 
@@ -27,8 +27,8 @@ SwiftUI meets MapKit is an iOS demo application.
 ## Requirements
 
 - iOS 13.0+ / macOS 10.14.5+
-- Xcode 11.0+
-- Swift 5.1+
+- Xcode 11.6+
+- Swift 5.2+
 
 ## Dependencies
 
