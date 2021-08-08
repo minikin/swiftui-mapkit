@@ -23,6 +23,7 @@ SwiftUI meets MapKit is an iOS demo application.
   - [Development](#development)
     - [Project Structure](#project-structure)
   - [Run Tests](#run-tests)
+  - [Support](#support)
 
 ## Requirements
 
@@ -76,3 +77,7 @@ Inside the Xcode project, there are a few separations:
 The SwiftUIMapKit project contains one unit test target: `SwiftUIMapKitTests`.
 
 - To run all tests from Xcode, select the Scheme `SwiftUIMapKit` and press _CMD_ + _U_ or select test from Xcode's dropdown.
+
+## Support
+
+Post issues and feature requests on the GitHub [issue tracker](https://github.com/minikin/swiftui-mapkit/issues).
