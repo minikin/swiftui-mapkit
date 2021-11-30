@@ -2,7 +2,7 @@
 
 SwiftUI meets MapKit is an iOS demo application.
 
-<a href="https://twitter.com/minikin"><img src="https://i.ibb.co/L5HSrLW/map.png" alt="map" border="0"></a>
+<a href="https://github.com/minikin/swiftui-mapkit"><img src="https://github.com/minikin/swiftui-mapkit/blob/master/assets/iPhone.png?raw=true" alt="map" border="0"></a>
 
 ## Meta
 
