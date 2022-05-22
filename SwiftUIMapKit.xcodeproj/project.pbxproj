@@ -515,9 +515,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftUIMapKit/SwiftUIMapKit.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "SwiftUIMapKit/App/Preview\\ Content";
-				DEVELOPMENT_TEAM = GW82A8W73Z;
+				DEVELOPMENT_TEAM = 362TXNZD27;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIMapKit/App/Resources/Info.plist;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
@@ -528,7 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.SwiftUIMapKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
@@ -539,9 +540,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftUIMapKit/SwiftUIMapKit.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "SwiftUIMapKit/App/Preview\\ Content";
-				DEVELOPMENT_TEAM = GW82A8W73Z;
+				DEVELOPMENT_TEAM = 362TXNZD27;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIMapKit/App/Resources/Info.plist;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
@@ -552,7 +554,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.minikin.SwiftUIMapKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
