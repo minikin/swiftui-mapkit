@@ -1,5 +1,3 @@
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
-
 # SwiftUI meets MapKit
 
 SwiftUI meets MapKit is an iOS demo application.
